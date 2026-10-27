@@ -4,7 +4,7 @@ from decimal import Decimal
 
 import pytest
 
-from discounts import (apply_group_discount, apply_premium_surcharge,
+from gym_quote.discounts import (apply_group_discount, apply_premium_surcharge,
                        apply_special_offer)
 
 

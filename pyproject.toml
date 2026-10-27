@@ -1,0 +1,10 @@
+[project]
+name = "gym-quote"
+version = "0.1.0"
+description = "Monthly gym membership quote"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+# Lets a bare `pytest` (as Jenkins and Actions run it) import gym_quote without installing it.
+pythonpath = ["."]
+testpaths = ["tests"]

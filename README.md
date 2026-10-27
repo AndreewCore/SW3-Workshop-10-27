@@ -17,7 +17,3 @@ pylint $(git ls-files '*.py')
 Each member works on a `feature/<name>` branch and opens a pull request to `main`.
 GitHub Actions must pass and another member must review before merging.
 Every merge to `main` triggers a Jenkins build.
-
-## Mensaje de Prueba para Webhook
-## Mensaje de Prueba para Webhook Visual Studio Code
-## Mensaje de Prueba para Webhook CI merged

@@ -1,13 +1,14 @@
-"""Quote result shared by the calculation and the command line."""
+"""Quote result shared by calculation and the command line."""
 
 
 class QuoteResult:
-    """Monthly total of a quote, or -1 when the selection is invalid or cancelled."""
+    """Monthly total and breakdown of a quote, or -1 if invalid."""
 
     INVALID = -1
 
-    def __init__(self, total=INVALID):
+    def __init__(self, total=INVALID, breakdown=None):
         self.total = total
+        self.breakdown = dict(breakdown) if breakdown else {}
 
     def is_valid(self):
         """Return True when the quote produced a real total."""
